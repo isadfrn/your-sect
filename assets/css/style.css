@@ -1,0 +1,152 @@
+:root {
+  --background: #2f2e41;
+  --mid: #c2c2c2;
+  --main: #00bfa6;
+  --light: #ffffff;
+
+  --jetbrains: 'JetBrains Mono', monospace;
+  --opensans: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--jetbrains);
+  background-color: var(--background);
+}
+
+.container {
+  padding: 1rem 4rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  padding: 0.5rem 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--mid);
+}
+
+header nav ul li {
+  padding: 0.5rem 0;
+  list-style-type: none;
+}
+
+header nav ul li:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main img {
+  max-width: 20rem;
+}
+
+main section {
+  padding: 1rem 0;
+}
+
+main section h1 {
+  padding: 1rem 0;
+  color: var(--light);
+}
+
+main section h1 span {
+  color: var(--main);
+}
+
+main section p {
+  padding: 1rem 0;
+  text-align: justify;
+  font-family: var(--opensans);
+  color: var(--mid);
+}
+
+main section strong {
+  font-weight: 700;
+}
+
+main section span {
+  color: var(--main);
+}
+
+footer .line {
+  background-color: var(--main);
+  height: 2px;
+  margin: 0.5rem 0;
+}
+
+footer p {
+  color: var(--light);
+  text-align: center;
+}
+
+footer p a {
+  color: var(--light);
+}
+
+footer img {
+  width: 2rem;
+  padding: 1rem 0;
+  position: static;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 769px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    flex-direction: row;
+  }
+
+  header nav ul li {
+    padding: 0 0 0 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main img {
+    max-width: 20rem;
+  }
+
+  main section {
+    padding: 8rem 0 8rem 4rem;
+  }
+
+  footer img {
+    width: 2rem;
+    padding: 1rem 0;
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
+}
