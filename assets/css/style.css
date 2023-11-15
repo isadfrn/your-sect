@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #2f2e41;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+nav {
+  font-family: "Ubuntu Mono", monospace;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav img {
+  max-width: 15rem;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  padding: 0.4rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  max-width: 15rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+h1 span {
+  color: #00bfa6;
+}
+
+p strong {
+  font-weight: 700;
+}
+
+p span {
+  color: #00bfa6;
+}
+
+footer {
+  font-family: "Ubuntu Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #00bfa6;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer img {
+  max-width: 4rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main img {
+    max-width: 30rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+  h1 span {
+    color: #00bfa6;
+  }
+
+  p strong {
+    font-weight: 700;
+  }
+
+  p span {
+    color: #00bfa6;
+  }
+
+  footer {
+    font-family: "Ubuntu Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .line {
+    width: 60%;
+    border: 1px solid #00bfa6;
+  }
+
+  footer img {
+    max-width: 4rem;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+  }
+}
